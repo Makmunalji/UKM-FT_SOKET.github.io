@@ -1,0 +1,101 @@
+nav .container ul li a:hover::after{
+  content: '';
+  display: block;
+  border-bottom: 4px solid  rgb(250, 172, 3);
+  margin: auto;
+  width: 40px;
+}
+.depan{
+  width: 200px;
+  display: block;
+  margin-left: 20px;
+}
+.navbarList{
+  margin-right: 60px;
+}
+.brand-logo{
+  display: block;
+  margin-left: 60px;
+}
+.logo{
+  width: 40px;
+  height: 40px;
+  margin-top: 9px;
+}
+.logo-brand{
+  font-size: 20px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bold;
+  margin-top: -67px;
+  display: block;
+  margin-left: 50px;
+}
+.brand1{
+  margin-top: 200px;
+}
+.slider h3,
+.slider h5,
+.clients h3{
+  text-shadow: 1px 1px 3px rgba(0,0,0,0.5);
+}
+.parallax-container{
+  height: 20%;
+}
+.parallax img{
+  filter: grayscale(1);
+  opacity: 0.5 !important;
+}
+.clients img{
+  max-width: 200px;
+  filter: drop-shadow(1px,1px,1px rgba(0,0,0,0.8));
+}
+.services .container .card-panel{
+  transition: 1s;
+}
+.services .container .card-panel:hover{
+  transform: scale(.97);
+  box-shadow: 0 0 7px 3px rgba(0, 81, 255,0.7);
+  border: 2px solid rgb(0,81,255);
+}
+.portofolio .container img{
+  transition: 1s;
+}
+.portofolio .container img:hover{
+  transform: scale(.98);
+  border: 2px solid  rgb(0,81,255);
+  box-shadow: 0 0 7px 3px rgba(0, 81, 255,0.7);
+}
+section{
+  padding: 20px 0;
+}
+form .card-alert{
+  display: none;
+}
+form .load{
+  display: none;
+}
+footer{
+  padding: 3px 0;
+}
+footer .flow-text{
+  font-size: 13px;
+}
+.footerBawah{
+  margin-top: 22px;
+}
+
+@media only screen and (max-width: 600px) {
+  .logo-brand{
+    font-size: 15px;
+    display: block;
+    line-height: 15px;
+    margin-top: -42px;
+  }
+  .brand-logo{
+    width: 200px;
+    margin-right: 50px;
+  }
+  .footerBawah{
+    margin-top: 210px;
+  }
+}
