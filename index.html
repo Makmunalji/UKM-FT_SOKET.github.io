@@ -254,7 +254,7 @@
             </ul>
           </div>
           <div class="col m7 s12">
-            <form name="submit-to-google-sheet" id="myForm">
+            <form name="submit-to-google-sheet">
               <div class="card-action card-alert">
                 <p style="color: blue;"><strong>Terimakasih</strong> pesan anda telah kami terima!</p>
               </div>
@@ -262,7 +262,7 @@
                 <h5>Please fill out this form</h5>
                 <div class="input-field">
                   <label for="name">Name</label>
-                  <input type="text" name="name" id="name" required class="validate">
+                  <input type="text" name="nama" id="name" required class="validate">
                 </div>
                 <div class="input-field">
                   <label for="email">Email</label>
@@ -270,10 +270,10 @@
                 </div>
                 <div class="input-field">
                   <label for="phone">Phone</label>
-                  <input type="number" name="phone" id="phone">
+                  <input type="number" name="nomor" id="phone">
                 </div>
                 <div class="input-field">
-                  <textarea name="message" id="message" class="materialize-textarea"></textarea>
+                  <textarea name="pesan" id="message" class="materialize-textarea"></textarea>
                   <label for="message">message</label>
                 </div>
                 <button type="submit" class="btn blue darken-2 kirim">send</button>
@@ -335,9 +335,8 @@
 
       AOS.init();
 
-      const scriptURL = 'https://script.google.com/macros/s/AKfycbwi07c7lHC9VrhzslnV0I_2AzOfGrbKg8xej9vTRjVLP-wDFkUk9nJYSGz2hQhOeMU1/exec';
-      // const form = document.forms['submit-to-google-sheet'];
-      const form = document.getElementById('myFrom');
+      const scriptURL = 'https://script.google.com/macros/s/AKfycbzWiY-k0zCQRc8eoXGohNn9Nina7XCAtzJJhsQix5-0tfkV1IkzxHPyFGlyXwaBd-gHrg/exec';
+      const form = document.forms['submit-to-google-sheet'];
       const btnKirim = document.querySelector('.kirim');
       const btnLoad = document.querySelector('.load');
       const myAlert = document.querySelector('.card-alert');
@@ -361,6 +360,7 @@
           })
           .catch(error => console.log('Error!', error.message))
         });
+
     </script>
   </body>
 </html>
