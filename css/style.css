@@ -93,7 +93,8 @@ footer .flow-text{
   }
   .brand-logo{
     width: 200px;
-    margin-right: 50px;
+    margin-left: 20px;
+    display: inline-block;
   }
   .footerBawah{
     margin-top: 210px;
